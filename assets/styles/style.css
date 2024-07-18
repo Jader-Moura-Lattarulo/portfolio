@@ -36,14 +36,32 @@
     color: var(--text-color);
 }
 
-/*
-.container__header__logo{
+.container__logo{
+    position: absolute;
+    width: 100%;
+    height: var(--height-header-footer);
+    justify-content: left;
 }
+
+.container__logo__img {
+    padding: 0.2%;
+    height: 99%;
+}
+
 .container__header__menu{
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .container__header__menu__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-*/
+
 .container__header__menu__nav__list,
 .container__footer__menu__nav__list {
     display: flex;
