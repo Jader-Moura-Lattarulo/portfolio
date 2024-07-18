@@ -1,0 +1,33 @@
+:root {
+    --height-header-footer: 1rem;
+    --height-main: calc(99vh - (var(--height-header-footer) + var(--height-header-footer)));
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-image: url("/assets/images/index-background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__header {
+    display: flex;
+    height: var(--height-header-footer);
+}
+
+.container__main {
+    display: flex;
+    height: var(--height-main);
+}
+
+.container__footer {
+    display: flex;
+    height: var(--height-header-footer);
+}
