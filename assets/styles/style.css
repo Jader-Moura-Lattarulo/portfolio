@@ -9,6 +9,7 @@
     --font-title:"Krona One", sans-serif;
     --text-color: #e4e9ed;
     --secoundary-color: #9cd1ff;
+    --logo-color: rgb(207, 18, 46);
 }
 
 *{
@@ -80,6 +81,30 @@
     color:inherit;
 }
 
+.container__header__menu__nav__list__link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+  }
+
+.container__header__menu__nav__list__link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--logo-color);
+    visibility: hidden;
+    transition: width 0.6s ease;
+}
+
+.container__header__menu__nav__list__link:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
 .container__main {
     height: var(--height-main);
     display: flex;
@@ -131,7 +156,7 @@
     border-radius: 80px;
 }
 
-.container__footer {
+/*.container__footer {
     
 }
 .container__footer__menu{
@@ -139,7 +164,8 @@
 }
 .container__footer__menu__nav{
     
-}
+}*/
+
 .container__footer__menu__nav__list {
     list-style-type: none;
 }
