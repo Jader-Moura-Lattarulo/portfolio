@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 :root {
     --height-header-footer: 3rem;
@@ -66,6 +67,7 @@
 .container__footer__menu__nav__list {
     display: flex;
     gap: 30px;
+    list-style-type: none;
 }
 
 .container__header__menu__nav__list__link,
@@ -129,14 +131,52 @@
     border-radius: 80px;
 }
 
-/*
 .container__footer {
+    
 }
 .container__footer__menu{
+    
 }
 .container__footer__menu__nav{
+    
 }
 .container__footer__menu__nav__list {
+    list-style-type: none;
 }
-.container__footer__menu__nav__list__link
-*/
+.container__footer__menu__nav__list__link{
+    display: inline-flex;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: rgba(228,233,237,1);
+    transition: all 0.8s ease-in-out;
+    gap: 1rem;
+    position: relative;
+}
+
+.github__icon {
+    margin-left: 11%;
+}
+
+.linkedin__icon {
+    margin-left: 15%;
+}
+
+.container__footer__menu__nav__list__link:hover {
+    width: 200px;
+    justify-content: center;
+}
+
+.container__footer__menu__nav__list__link:hover .github__icon,
+.container__footer__menu__nav__list__link:hover .linkedin__icon {
+    margin-left: 0%;
+}
+
+.icon,
+.label {
+    font-size: 2rem;
+}
