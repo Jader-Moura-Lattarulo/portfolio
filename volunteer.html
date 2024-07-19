@@ -9,13 +9,15 @@
   </head>
   <body>
     <section class="container">
+      <section class="container__logo">
+        <img class="container__logo__img" src="/assets/images/JMdev-red.png" alt="logo JMDev" />
+      </section>
       <header class="container__header">
-        <section class="container__header__logo">Logo</section>
         <section class="container__header__menu">
           <nav class="container__header__menu__nav">
             <ul class="container__header__menu__nav__list">
               <li>
-                <a class="container__header__menu__nav__list__link" href="/index.html"> Home</a>
+                <a class="container__header__menu__nav__list__link" href="/index.html">Home</a>
               </li>
               <li>
                 <a class="container__header__menu__nav__list__link" href="/aboutme.html">About-me</a>
@@ -38,7 +40,35 @@
       </header>
       <section class="container__main"></section>
       <footer class="container__footer">
-        <section>Links LinkedIn | GitHub</section>
+        <section class="container__footer__menu">
+          <nav class="container__footer__menu__nav">
+            <ul class="container__footer__menu__nav__list">
+              <li>
+                <a
+                  class="container__footer__menu__nav__list__link github"
+                  href="https://github.com/Jader-Moura-Lattarulo"
+                  target="_blank"
+                  ><div class="icon github__icon">
+                    <i class="fab fa-github"></i>
+                  </div>
+                  <span class="label">GitHub</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="container__footer__menu__nav__list__link linkedin"
+                  href="https://www.linkedin.com/in/dev-jader/"
+                  target="_blank"
+                >
+                  <div class="icon linkedin__icon">
+                    <i class="fab fa-linkedin"></i>
+                  </div>
+                  <span class="label">LinkedIn</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </section>
       </footer>
     </section>
     <script src="/assets/js/index.js"></script>
